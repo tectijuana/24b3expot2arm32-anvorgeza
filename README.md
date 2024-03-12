@@ -57,6 +57,7 @@ Ejercicios ......
 
 Estudiante:
 Villada Dominguez Edwin 21212063
+Santos Rivera Karla Judith
 
 	</p>
 
