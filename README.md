@@ -41,7 +41,7 @@ Departamento de Sistemas y Computación
 Ingeniería en Sistemas Computacionales
 
 Semestre:
-Febrero - Junio 2022
+Enero - Junio 2024
 
 Materia:
 Lenguajes de interfaz
