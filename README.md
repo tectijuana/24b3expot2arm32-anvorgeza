@@ -56,7 +56,7 @@ Título del trabajo:
 Ejercicios ......
 
 Estudiante:
-.......
+Villada Dominguez Edwin 21212063
 
 	</p>
 
