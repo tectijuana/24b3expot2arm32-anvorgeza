@@ -1,10 +1,12 @@
-
+![Firefly una hamburguesa hecha de componentes tecnologicos 42386](https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158230568/db9c25dc-9127-48d5-a9ac-fb5abce54e6b)
 <!---
    Para comentarios usar este bloque para documentar pendientes, secuencias, etc.
 --->
 
 
 ![](https://s3.amazonaws.com/videos.pentesteracademy.com/videos/badges/low/arm-assembly.png)
+![Firefly una hamburguesa hecha de componentes tecnologicos 42386](https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158230568/ddd0d7bd-cb06-482c-ba14-51a7258b6cfe)
+
 
 Borrar y modificar README
 
