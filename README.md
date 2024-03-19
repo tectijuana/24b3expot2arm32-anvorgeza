@@ -11,7 +11,9 @@ Borrar y modificar README
 - Todo programa lleva su comentario en la parte de arriba, objetivo y nombre del programador minimo, como templete
 - images  - de haber algo de pantallas ahi se presentaran, su busca documentarlas en MARKDOWN el código es:
 
-``` ![](images/---archivo.jpg---) recordar que no lleva espacios```
+```
+![](images/---archivo.jpg---) recordar que no lleva espacios
+```
 
 <!---
   Los nombres de las imagenes no deben cambiar de preferenci el nombre del programa como:  KIOSKO.cpp (su pantallas serian KISOCO.jpg, KIOSCO-1.jpg, KIOSCO-2.jpg ... )
@@ -131,48 +133,91 @@ ENTREGA:
 
 </pre>
 
-<pre>
-	<p align=left>
-	
-GDB (GNU Debugger) es una herramienta de depuración extremadamente útil para programadores 
+
+# CONCEPTOS BASICOS 	
+**GDB (GNU Debugger)** es una herramienta de depuración extremadamente útil para programadores 
 que permite inspeccionar y controlar la ejecución de programas para identificar y corregir 
 errores. Aquí están algunos conceptos básicos de GDB:
 
-Punto de Interrupción (Breakpoint):
-Un punto de interrupción es una instrucción que le indica a GDB que detenga la ejecución 
+**Punto de Interrupción (Breakpoint)** es una instrucción que le indica a GDB que detenga la ejecución 
 del programa en un punto específico. Puedes establecer puntos de interrupción en una línea
 de código, en una función o incluso en una dirección de memoria.
 
-Exploración del Estado del Programa:
-GDB te permite examinar el estado del programa en cualquier punto de su ejecución. Puedes 
+**Exploración del Estado del Programa** te permite examinar el estado del programa en cualquier punto de su ejecución. Puedes 
 ver los valores de las variables, los registros, el contenido de la memoria y más. Utilizas 
 comandos como print (o p abreviado) para imprimir valores de variables, info registers para 
 mostrar los valores de los registros y x para examinar el contenido de la memoria.
 
-Ejecución Paso a Paso:
-Con GDB, puedes ejecutar el programa paso a paso para examinar el efecto de cada instrucción. 
+**Ejecución Paso a Paso:** Con GDB, puedes ejecutar el programa paso a paso para examinar el efecto de cada instrucción. 
 Los comandos step (o s) permiten ejecutar la siguiente instrucción y detenerse, mientras que 
 next (o n) ejecuta la siguiente línea de código y detiene la ejecución.
 
-Continuación de la Ejecución:
-Después de detener la ejecución en un punto de interrupción o después de ejecutar paso a paso, 
+**Continuación de la Ejecución:** Después de detener la ejecución en un punto de interrupción o después de ejecutar paso a paso, 
 puedes continuar la ejecución del programa utilizando el comando continue (o c). Esto permite 
 que el programa se ejecute hasta el próximo punto de interrupción o hasta que termine.
 
-Inspección de la Pila de Llamadas (Stack Trace):
-GDB te permite ver la pila de llamadas del programa, lo que es útil para comprender cómo se 
+**Inspección de la Pila de Llamadas (Stack Trace):** GDB te permite ver la pila de llamadas del programa, lo que es útil para comprender cómo se 
 están llamando a las funciones y qué funciones están activas en un momento dado. El comando 
 backtrace (o bt) muestra la pila de llamadas actual.
 
-Manipulación del Código:
-Además de inspeccionar el estado del programa, GDB te permite realizar cambios en tiempo de 
+**Manipulación del Código:** Además de inspeccionar el estado del programa, GDB te permite realizar cambios en tiempo de 
 ejecución. Puedes modificar el valor de una variable, saltar instrucciones, cambiar el flujo 
 de ejecución y más. Sin embargo, debes tener cuidado al hacer cambios para evitar comportamientos 
 no deseados en tu programa.
 
-Finalización de la Sesión de Depuración:
-Una vez que hayas identificado y corregido los errores en tu programa, puedes finalizar la sesión 
+**Finalización de la Sesión de Depuración:** Una vez que hayas identificado y corregido los errores en tu programa, puedes finalizar la sesión 
 de depuración con el comando quit (o q). Esto cierra GDB y termina la depuración.	
-	</p>
 
-</pre>
+
+# BREAKPOINTS 
+
+Los breakpoints (puntos de interrupción) son una herramienta fundamental en la depuración de programas con GDB. Permiten detener la ejecución del programa en puntos específicos para examinar su estado y comportamiento. A continuacion se mostraran algunas maneras de trabajar con breakpoints:
+
+
+### Establecer un breakpoint: 
+Puedes establecer un breakpoint en una línea de código específica utilizando el comando break seguido de la ubicación donde deseas detener la ejecución. Por ejemplo, para establecer un breakpoint en la línea 10 de un archivo:
+```asm	
+break archivo.c:10
+```
+También puedes establecer un breakpoint en una función utilizando su nombre:
+```asm	
+break nombre_funcion
+```
+### Listar breakpoints:
+Puedes listar todos los breakpoints establecidos utilizando el comando info breakpoints o simplemente info b:
+```asm	
+info breakpoints
+```
+### Eliminar un breakpoint:
+Para eliminar un breakpoint específico, utiliza el comando delete seguido del número de breakpoint mostrado en 
+la lista de breakpoints:
+```asm	
+delete numero_breakpoint
+```
+Si deseas eliminar todos los breakpoints, simplemente usa:
+```asm	
+delete breakpoints
+```
+### Desactivar y reactivar breakpoints:
+Puedes desactivar un breakpoint sin eliminarlo utilizando el comando disable seguido del número de breakpoint:
+```asm	
+disable numero_breakpoint
+```
+Para reactivar un breakpoint desactivado, utiliza el comando enable seguido del número de breakpoint:
+```asm	
+enable numero_breakpoint
+```
+### Condiciones en breakpoints:
+GDB permite establecer breakpoints condicionales, que se activan solo cuando se cumple una condición específica. 
+Por ejemplo, para establecer un breakpoint condicional en una variable x igual a 10:
+```asm	
+break archivo.c:10 if x == 10
+```
+### Comandos en breakpoints:
+Puedes asociar comandos a un breakpoint para que se ejecuten automáticamente cuando el programa se detenga en ese 
+punto. Esto es útil para inspeccionar variables, imprimir mensajes, etc. Por ejemplo:
+```asm	
+commands numero_breakpoint
+> print variable
+> end
+```
