@@ -130,3 +130,49 @@ ENTREGA:
 	</p>
 
 </pre>
+
+<pre>
+	<p align=left>
+	
+GDB (GNU Debugger) es una herramienta de depuración extremadamente útil para programadores 
+que permite inspeccionar y controlar la ejecución de programas para identificar y corregir 
+errores. Aquí están algunos conceptos básicos de GDB:
+
+Punto de Interrupción (Breakpoint):
+Un punto de interrupción es una instrucción que le indica a GDB que detenga la ejecución 
+del programa en un punto específico. Puedes establecer puntos de interrupción en una línea
+de código, en una función o incluso en una dirección de memoria.
+
+Exploración del Estado del Programa:
+GDB te permite examinar el estado del programa en cualquier punto de su ejecución. Puedes 
+ver los valores de las variables, los registros, el contenido de la memoria y más. Utilizas 
+comandos como print (o p abreviado) para imprimir valores de variables, info registers para 
+mostrar los valores de los registros y x para examinar el contenido de la memoria.
+
+Ejecución Paso a Paso:
+Con GDB, puedes ejecutar el programa paso a paso para examinar el efecto de cada instrucción. 
+Los comandos step (o s) permiten ejecutar la siguiente instrucción y detenerse, mientras que 
+next (o n) ejecuta la siguiente línea de código y detiene la ejecución.
+
+Continuación de la Ejecución:
+Después de detener la ejecución en un punto de interrupción o después de ejecutar paso a paso, 
+puedes continuar la ejecución del programa utilizando el comando continue (o c). Esto permite 
+que el programa se ejecute hasta el próximo punto de interrupción o hasta que termine.
+
+Inspección de la Pila de Llamadas (Stack Trace):
+GDB te permite ver la pila de llamadas del programa, lo que es útil para comprender cómo se 
+están llamando a las funciones y qué funciones están activas en un momento dado. El comando 
+backtrace (o bt) muestra la pila de llamadas actual.
+
+Manipulación del Código:
+Además de inspeccionar el estado del programa, GDB te permite realizar cambios en tiempo de 
+ejecución. Puedes modificar el valor de una variable, saltar instrucciones, cambiar el flujo 
+de ejecución y más. Sin embargo, debes tener cuidado al hacer cambios para evitar comportamientos 
+no deseados en tu programa.
+
+Finalización de la Sesión de Depuración:
+Una vez que hayas identificado y corregido los errores en tu programa, puedes finalizar la sesión 
+de depuración con el comando quit (o q). Esto cierra GDB y termina la depuración.	
+	</p>
+
+</pre>
