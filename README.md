@@ -221,3 +221,7 @@ commands numero_breakpoint
 > print variable
 > end
 ```
+### Inspección de registros y memoria
+
+
+### Seguimiento de ejecución
