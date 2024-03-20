@@ -41,8 +41,7 @@ _start:
 
 ## Depuracion
 Usango gdb podemos ejecutar el codigo hasta el punto donde se obtiene la direccion donde se almacena el caracter cuyo indice indicamos, además de ver los valores de los registros.
-
-![ubicacion](![image](https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158231210/b6a2d450-5ab6-4fde-bf93-37c8226fd496))
+![image](https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158231210/b6a2d450-5ab6-4fde-bf93-37c8226fd496)
 
 El arreglo de caracteres se alamcena en r0 y el caracter en r1. Podemos ver que el caracter está muy alejado del caracter inicial, indicando que se está accediendo a una direccion de memoria que está fuera del arreglo. 
 
