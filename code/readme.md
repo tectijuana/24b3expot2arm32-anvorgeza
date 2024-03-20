@@ -9,7 +9,7 @@ Autor: Velazquez Duran Sinuhe de Jesus
 Date: 19-03-2024
 Description : Define un array caracteres e intenta imprimir un caracter fuera del array
 Imput: -
-Ouput: -
+Ouput: % 
 */
 
 .section .data
