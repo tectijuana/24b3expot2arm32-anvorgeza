@@ -225,3 +225,31 @@ commands numero_breakpoint
 
 
 ### Seguimiento de ejecución
+Como se ha visto anteriormente, GDB es una herramienta increíblemente útil a la hora de depurar código, especialmente 
+en un lenguaje complejo como ensamblador. Es por esta razón que GDB nos permite ejecutar nuestro código de diferentes
+formas, siendo una de estas el ejecutado "línea por línea", o mejor dicho, instrucción por instrucción.
+
+El ejecutar el código instrucción por instrucción es una forma muy precisa de seguir el programa y se utiliza para hacer un
+seguimiento del programa en trozos especialmente difíciles. Si se ejecuta el programa de esta forma se muestra cada vez la instrucción que acaba 
+de ser ejecutada.
+
+Para realizarlo, hay dos formas de realizar el seguimiento.
+
+```asm	
+(GDB) step
+```
+El comando anterior, también abreviado como s, ejecuta la siguiente instrucción en el código. Sin embargo, si entra
+a una función, ejecutará el contenido de la función línea por línea.
+
+```asm	
+(GDB) next
+```
+El comando anterior, también abreviado como n, ejecuta la siguiente instrucción dentro del código. Sin embargo,
+si esta se topa con una función, la función será tomada como una única instrucción.
+
+Vale la pena resaltar que si el código se encuentra en C (u algún lenguaje no ensamblador), el comando next tiene
+una variación. El comando next ejecuta una línea en el lenguaje del que estemos hablando, mientras que:
+```asm	
+(GDB) nexti
+```
+Se usa para ejecutar una línea de ensamblador.
