@@ -222,7 +222,41 @@ commands numero_breakpoint
 > end
 ```
 ### Inspección de registros y memoria
+#### Inspección de registros
+A la hora de escribir codigo de ensamblador para hacer un programa, frecuentemente se necesitará mover información
+de un registro a otro, por lo que es necesario saber que información tiene cada registro para no mover algun dato no
+deseado, para esto existe un comando bastante util que nos permite ver la información dentro de cada registro, el cual 
+es 'info registers', se puede abreviar como 'i r', este comando se puede usar de dos formas
 
+```asm
+(GDB) i r
+```
+Este comando es el que imprime todos los registros mostrando su contenido
+
+```asm
+(GDB) i r rax
+```
+Si se quiere ver un registro en especifico, basta con ponerlo al final del comando, y se imprimira solo ese registro en lugar de todos
+
+#### Inspección de memoria
+Es util para conocer donde se encuentran las variables en la memoria, mediante su direccion de memoria, o haciendo
+referencia a la variable
+
+```asm
+(GDB) print (int) sys_call
+```
+Este comando sirve para ver que variables estan involucradas justo en donde se detuvo el programa, es importante especificar
+el tipo de variable, de caso contrario, lanzara un error
+
+```asm
+(GDB) info address sys_call
+```
+Este comando sirve para obtener la direccion de memoria en este caso de sys_call
+
+```asm
+(gdb) print (int) *0x402008
+```
+Este comando sirve para obtener los datos que se encuentran en cierta dirección de memoria
 
 ### Seguimiento de ejecución
 Como se ha visto anteriormente, GDB es una herramienta increíblemente útil a la hora de depurar código, especialmente 
