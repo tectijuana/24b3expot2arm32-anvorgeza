@@ -1,5 +1,5 @@
 /*
-Title: Array con error para depurar con gdb  
+Title: Array con error para depurar con gdb
 Filename: arreglo.s
 Autor: Velazquez Duran Sinuhe de Jesus
 Date: 19-03-2024
@@ -19,15 +19,15 @@ _start:
     ldr r0, =cadena
 
     # Acceder al segundo elemento de la cadena (la segunda letra)
-    ldrb r1, [r0, #4]
+    add r1, r0, #6
 
     # Escribir la segunda letra en la salida estándar
     mov r0, #1    @ Descriptor de archivo estándar de salida (stdout)
     mov r2, #1    @ Longitud del buffer
     mov r7, #4    @ Código de llamada al sistema para write
-    svc #0        @ Llamada al sistema
+    swi 0        @ Llamada al sistema
 
     # Salir del programa
     mov r7, #1    @ Código de salida del programa
     mov r0, #0    @ Código de salida
-    svc #0        @ Llamada al sistema para terminar el programa
+    swi 0        @ Llamada al sistema para terminar el programa
