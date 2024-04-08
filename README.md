@@ -1,5 +1,9 @@
+
+<img src="https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158230568/f47b993b-e4dd-4f9c-979a-68c51a0a4a10" width="200"></img>
+
 <!---
 ![Firefly una hamburguesa hecha de componentes tecnologicos 42386](https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158230568/db9c25dc-9127-48d5-a9ac-fb5abce54e6b)
+-->
 
 <pre>
 
@@ -35,10 +39,7 @@ Santos Rivera Karla Judith
 </pre>
 
 
-<pre>
-	<h1 align=center > GDB</h1>
-</pre>
---->
+# GDB
 **GDB (GNU Debugger)** es una herramienta de depuración extremadamente útil para programadores 
 que permite inspeccionar y controlar la ejecución de programas para identificar y corregir 
 errores. 
@@ -85,16 +86,16 @@ Son una herramienta fundamental en la depuración de programas con GDB. Permiten
 ## Formas de trabajar con breakpoints:
 
 - ### Establecer un breakpoint:
-   - Se puede establecer en una línea de código específica utilizando el comando **_break_** seguido de la ubicación donde deseas detener la ejecución. Por ejemplo, para establecer un breakpoint en la línea 10 de un archivo:
+   - Se puede establecer en una línea de código específica utilizando el comando **_break_** seguido de la ubicación donde deseas detener la ejecución. Por ejemplo, para establecer un breakpoint en la **línea** 10 de un archivo:
      ```asm
      break archivo.c:10
      ```
-  - También puedes establecer un breakpoint en una función utilizando su nombre:
+  - También puedes establecer un breakpoint en una función utilizando su **nombre**:
     ```asm
     break nombre_funcion
     ```
 - ### Listar breakpoints:
-  - Puedes listar todos los breakpoints establecidos utilizando el comando info breakpoints o simplemente info b:
+  - Puedes listar todos los breakpoints establecidos utilizando el comando **_info breakpoints_** o simplemente **_info b_**:
     ```asm
     info breakpoints
     ```
@@ -108,16 +109,16 @@ Son una herramienta fundamental en la depuración de programas con GDB. Permiten
     delete breakpoints
     ```
 - ### Desactivar y reactivar breakpoints:
-  - Puedes desactivar un breakpoint sin eliminarlo utilizando el comando disable seguido del número de breakpoint:
+  - Puedes **desactivar** un breakpoint sin eliminarlo utilizando el comando disable seguido del número de breakpoint:
     ```asm
     disable numero_breakpoint
     ```
-  - Para reactivar un breakpoint desactivado, utiliza el comando enable seguido del número de breakpoint:
+  - Para **reactivar** un breakpoint desactivado, utiliza el comando enable seguido del número de breakpoint:
     ```asm
     enable numero_breakpoint
     ```
 - ### Condiciones en breakpoints: 
-  - GDB permite establecer breakpoints condicionales, que se activan solo cuando se cumple una condición específica.
+  - GDB permite establecer breakpoints **condicionales**, que se activan solo cuando se cumple una condición específica.
     Por ejemplo, para establecer un breakpoint condicional en una variable x igual a 10:
     ```asm
     break archivo.c:10 if x == 10
@@ -126,8 +127,8 @@ Son una herramienta fundamental en la depuración de programas con GDB. Permiten
   - Puedes asociar comandos a un breakpoint para que se ejecuten automáticamente cuando el programa se detenga en ese punto. Esto es útil para inspeccionar variables, imprimir mensajes, etc. Por ejemplo:
     ```asm
     commands numero_breakpoint
-    > print variable
-    > end
+    print variable
+    end
     ```
 ### Inspección de registros y memoria
 #### Inspección de registros
