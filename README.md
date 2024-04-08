@@ -1,10 +1,12 @@
 
-<img src="https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158230568/f47b993b-e4dd-4f9c-979a-68c51a0a4a10" width="200"></img>
+<img src="https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158230568/f47b993b-e4dd-4f9c-979a-68c51a0a4a10" width="100%"></img>
 
 <!---
 ![Firefly una hamburguesa hecha de componentes tecnologicos 42386](https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158230568/db9c25dc-9127-48d5-a9ac-fb5abce54e6b)
--->
 
+
+![Firefly una hamburguesa hecha de componentes tecnologicos 42386](https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158230568/db9c25dc-9127-48d5-a9ac-fb5abce54e6b)
+-->
 <pre>
 
 	<p align=center>
