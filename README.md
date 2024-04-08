@@ -40,8 +40,8 @@ Santos Rivera Karla Judith
 
 </pre>
 
+![Diseño sin título (2)](https://github.com/tectijuana/24b3expot2arm32-anvorgeza/assets/158230568/a8b99942-8d3c-4f67-827d-036d2c0401b3)
 
-# GDB
 **GDB (GNU Debugger)** es una herramienta de depuración extremadamente útil para programadores 
 que permite inspeccionar y controlar la ejecución de programas para identificar y corregir 
 errores. 
