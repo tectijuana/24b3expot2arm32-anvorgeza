@@ -54,7 +54,7 @@ Es una instrucción que le indica a GDB que detenga la ejecución del programa e
 > Pueden colorcarse **BREAKPOINT** en una linea de codigo, una funcion o en una direccion de memoria.
 
 ### **Exploración del Estado del Programa** 
-te permite examinar el estado del programa en cualquier punto de su ejecución. Utiliza comandos como **_print_** (p abreviado) para imprimir valores de variables, **_info registers_** para mostrar los valores de los registros y **_x_** para examinar el contenido de la memoria.
+Permite examinar el estado del programa en cualquier punto de su ejecución. Utiliza comandos como **_print_** (p abreviado) para imprimir valores de variables, **_info registers_** para mostrar los valores de los registros y **_x_** para examinar el contenido de la memoria.
 > [!IMPORTANT]
 > Puedes **ver** los **valores** de las *variables*, los *registros*, el contenido de la *memoria* y **más**.
 
