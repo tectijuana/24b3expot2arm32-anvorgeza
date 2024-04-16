@@ -132,7 +132,7 @@ Son una herramienta fundamental en la depuración de programas con GDB. Permiten
     print variable
     end
     ```
-### Inspección de registros y memoria
+# Inspección de registros y memoria
 #### Inspección de registros
 A la hora de escribir codigo de ensamblador para hacer un programa, frecuentemente se necesitará mover información
 de un registro a otro, por lo que es necesario saber que información tiene cada registro para no mover algun dato no
