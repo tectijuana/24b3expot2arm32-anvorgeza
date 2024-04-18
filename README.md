@@ -34,7 +34,10 @@ Ejercicios ......
 
 Estudiante:
 Villada Dominguez Edwin 21212063
-Santos Rivera Karla Judith
+Santos Rivera Karla Judith 21212050
+Morales Hernandez Jose Luis 21212001
+Badillo Cruz Ferran 21211921
+Velazquez Duran Sinuhe de Jesus 21212060
 
 	</p>
 
